@@ -1,0 +1,33 @@
+<div class="top-image">
+  <img src="/assets/topbado.jpg" class="top-badoimage">
+    <p class="top-image-title">Let's play badminton</p>
+</div>
+
+<%= render "shared/header"%>
+
+<p class="top-overview">
+  　Let's play badmintonは、関東地方の体育館やコミュニティセンターなど、バドミントンができる施設を検索できるサイトです。
+</p>
+
+<div class="search-bar">
+  <div class="rural-bar" style="display: block;">
+    <ul class="map-list">
+      <li class="map-list-area-kanto" style="display: none;" id="area_kanto">関東</li>
+    </ul>
+    <div class="prefecture-kanto" id="prefecture_kanto">
+      <ul class="list-kanto" >
+        <li class="list-tokyo">東京</li>
+        <li class="list-chiba">
+          <%= link_to "千葉", "/city/chiba.html.erb" %>
+        </li>
+        <li class="list-saitama">埼玉</li>
+        <li class="list-ibaraki">茨城</li>
+        <li class="list-tochigi">栃木</li>
+        <li class="list-gunma">群馬</li>
+        <li class="list-yamanasi">山梨</li>
+        <li class="list-kanagawa">神奈川</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
