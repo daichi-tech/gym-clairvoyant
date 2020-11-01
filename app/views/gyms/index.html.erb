@@ -1,3 +1,4 @@
+
 <div class="top-image">
   <img src="/assets/topbado.jpg" class="top-badoimage">
     <p class="top-image-title">Let's play badminton</p>
@@ -6,28 +7,194 @@
 <%= render "shared/header"%>
 
 <p class="top-overview">
-  　Let's play badmintonは、関東地方の体育館やコミュニティセンターなど、バドミントンができる施設を検索できるサイトです。
+  　Let's play badmintonは、全国の体育館やコミュニティセンターなど、バドミントンができる施設を検索できるサイトです。
 </p>
 
-<div class="search-bar">
-  <div class="rural-bar" style="display: block;">
-    <ul class="map-list">
-      <li class="map-list-area-kanto" style="display: none;" id="area_kanto">関東</li>
-    </ul>
-    <div class="prefecture-kanto" id="prefecture_kanto">
-      <ul class="list-kanto" >
-        <li class="list-tokyo">東京</li>
-        <li class="list-chiba">
-          <%= link_to "千葉", "/city/chiba.html.erb" %>
+<div class="search-menu">
+  <p class="menu_rural_title">施設を探す</p>
+  <p class="supplement">※現在、「関東・千葉」のみ検索可能</p>
+  <ul class="menu_rural">
+    <li>
+      <a href="" class="parent_menu">北海道・東北</a>
+      <ul>
+        <li>
+          <%= link_to "北海道", "#"%>
+        <li>
+          <%= link_to "青森", "#", class: "kanto" %>
         </li>
-        <li class="list-saitama">埼玉</li>
-        <li class="list-ibaraki">茨城</li>
-        <li class="list-tochigi">栃木</li>
-        <li class="list-gunma">群馬</li>
-        <li class="list-yamanasi">山梨</li>
-        <li class="list-kanagawa">神奈川</li>
+        <li>
+          <%= link_to "秋田", "#", class:"kanto" %>
+        </li>
+        <li>
+          <%= link_to "岩手", "#", class:"kanto" %>
+        </li>
+        <li>
+          <%= link_to "山形", "#", class:"kanto" %>
+        </li>
+        <li>
+          <%= link_to "宮城", "#", class: "kanto" %>
+        </li>
+        <li>
+          <%= link_to "福島", "#", class: "kanto" %>
+        </li>
       </ul>
-    </div>
-  </div>
-</div>
+    </li>
+
+    <li>
+      <a href="" class="parent_menu">関東</a>
+      <ul>
+        <li>
+          <%= link_to "東京", "#", class:"kanto" %>
+        </li>
+        <li>
+          <%= link_to "千葉", "#", class:"kanto" %>
+        </li>
+        <li>
+          <%= link_to "埼玉", "#", class:"kanto" %>
+        </li>
+        <li>
+          <%= link_to "茨城", "#", class: "kanto" %>
+        </li>
+        <li>
+          <%= link_to "栃木", "#", class: "kanto" %>
+        </li>
+        <li>
+          <%= link_to "群馬", "#", class: "kanto" %>
+        </li>
+        <li>
+          <%= link_to "神奈川", "#", class: "kanto" %>
+        </li>
+      </ul>
+    <li>
+
+    <li>
+      <a href="" class="parent_menu">中部</a>
+      <ul>
+        <li>
+          <%= link_to "山梨", "#", class:"kanto" %>
+        </li>
+        <li>
+          <%= link_to "長野", "#", class:"kanto" %>
+        </li>
+        <li>
+          <%= link_to "新潟", "#", class:"kanto" %>
+        </li>
+        <li>
+          <%= link_to "静岡", "#", class: "kanto" %>
+        </li>
+        <li>
+          <%= link_to "愛知", "#", class: "kanto" %>
+        </li>
+        <li>
+          <%= link_to "岐阜", "#", class: "kanto" %>
+        </li>
+        <li>
+          <%= link_to "福井", "#", class: "kanto" %>
+        </li>
+        <li>
+          <%= link_to "富山", "#", class: "kanto" %>
+        </li>
+        <li>
+          <%= link_to "石川", "#", class: "kanto" %>
+        </li>
+      </ul>
+    </li>
+
+    <li>
+      <a href="" class="parent_menu">近畿</a>
+      <ul>
+        <li>
+          <%= link_to "滋賀", "#", class:"kanto" %>
+        </li>
+        <li>
+          <%= link_to "三重", "#", class:"kanto" %>
+        </li>
+        <li>
+          <%= link_to "京都", "#", class:"kanto" %>
+        </li>
+        <li>
+          <%= link_to "奈良", "#", class: "kanto" %>
+        </li>
+        <li>
+          <%= link_to "大阪", "#", class: "kanto" %>
+        </li>
+        <li>
+          <%= link_to "和歌山", "#", class: "kanto" %>
+        </li>
+        <li>
+          <%= link_to "兵庫", "#", class: "kanto" %>
+        </li>
+      </ul>
+    </li>
+
+    <li>
+      <a href="" class="parent_menu">中国</a>
+      <ul>
+        <li>
+          <%= link_to "鳥取", "#", class:"kanto" %>
+        </li>
+        <li>
+          <%= link_to "岡山", "#", class:"kanto" %>
+        </li>
+        <li>
+          <%= link_to "島根", "#", class:"kanto" %>
+        </li>
+        <li>
+          <%= link_to "広島", "#", class: "kanto" %>
+        </li>
+        <li>
+          <%= link_to "山口", "#", class: "kanto" %>
+        </li>
+      </ul>
+    </li>
+
+    <li>
+      <a href="" class="parent_menu">四国</a>
+      <ul>
+        <li>
+          <%= link_to "香川", "#", class:"kanto" %>
+        </li>
+        <li>
+          <%= link_to "徳島", "#", class:"kanto" %>
+        </li>
+        <li>
+          <%= link_to "愛媛", "#", class:"kanto" %>
+        </li>
+        <li>
+          <%= link_to "高知", "#", class: "kanto" %>
+        </li>
+      </ul>
+    </li>
+
+    <li>
+      <a href="" class="parent_menu">九州・沖縄</a>
+      <ul>
+        <li>
+          <%= link_to "福岡", "#", class:"kanto" %>
+        </li>
+        <li>
+          <%= link_to "佐賀", "#", class:"kanto" %>
+        </li>
+        <li>
+          <%= link_to "長崎", "#", class:"kanto" %>
+        </li>
+        <li>
+          <%= link_to "大分", "#", class: "kanto" %>
+        </li>
+        <li>
+          <%= link_to "熊本", "#", class: "kanto" %>
+        </li>
+        <li>
+          <%= link_to "宮崎", "#", class: "kanto" %>
+        </li>
+        <li>
+          <%= link_to "鹿児島", "#", class: "kanto" %>
+        </li>
+        <li>
+          <%= link_to "沖縄", "#", class: "kanto" %>
+        </li>
+      </ul>
+    </li>
+  </ul>
+    
 

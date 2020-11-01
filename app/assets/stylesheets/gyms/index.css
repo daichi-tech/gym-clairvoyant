@@ -12,27 +12,58 @@
   left: 0;
 }
 
-.map-list-area-kanto {
-  font-size: 40px;
-  width: 100px;
-  background-color: lightblue;
-  padding: 20px;
-  position: relative;
-  top: 20px;
-  left: 30px;
-  text-align: center;
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  opacity: 0.6;
 }
 
-.list-kanto {
+.menu_rural_title {
+  text-align: center;
+  width: 200px;
   font-size: 30px;
-  justify-content: space-around;
-  padding: 30px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  padding: 5px;
+  background-color: lightpink;
+  border-radius: 10px;
 }
-.list-tokyo,.list-chiba,.list-saitama,.list-ibaraki,.list-tochigi,.list-gunma,.list-yamanasi,.list-kanagawa {
-  margin-bottom: 10px;
-  padding: 10px;
-  background-color: lightblue;
-  width: 100px;
-  text-align: center;
+.supplement {
+  color: red;
+  margin-left: 25px;
 }
 
+.menu_rural > li > a {
+  display: flex;
+  padding: 10px;
+  background-color: lightskyblue;
+}
+.menu_rural > li > a::after {
+  content: '>';
+  transform: rotate(90deg);
+  margin-left: auto;
+}
+.menu_rural {
+  max-width: 400px;
+  width: 100%;
+  background-color: rgb(54, 168, 197);
+  text-align: center;
+  font-size: 30px;
+  margin: 0 20px 20px 20px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.menu_rural > li > ul > li a {
+  display: block;
+  padding: 5px;
+  background-color: lightblue;
+}
+.menu_rural ul {
+  display: none;
+}
+.menu_rural ul.active {
+  display: block;
+}
