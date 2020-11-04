@@ -1,13 +1,11 @@
-<header class="page-header">
-  <div class="signin-bar">
-    <ul class='right-bar'>
-      <% if user_signed_in? %>
-        <li><%= link_to 'current_user.name', "#", class: "user-name" %></li>
-        <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
-      <% else %>
-        <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
-        <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
-      <% end %>
-    </ul>
+<header>
+  <div class="header-bar">
+    <a href="" class="logo">Let's play badminton</a>
+    <nav>
+      <ul>
+        <li><%= link_to "施設検索"%></li>
+        <li><%= link_to "お問い合わせ"%></li>
+      </ul>
+    </nav>
   </div>
 </header>

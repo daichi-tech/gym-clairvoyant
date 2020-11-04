@@ -1,10 +1,11 @@
 
+<%= render "shared/header"%>
+
 <div class="top-image">
   <img src="/assets/topbado.jpg" class="top-badoimage">
-    <p class="top-image-title">Let's play badminton</p>
 </div>
 
-<%= render "shared/header"%>
+<%= render "shared/sessionbar"%>
 
 <p class="top-overview">
   　Let's play badmintonは、全国の体育館やコミュニティセンターなど、バドミントンができる施設を検索できるサイトです。
@@ -12,7 +13,7 @@
 
 <div class="search-menu">
   <p class="menu_rural_title">施設を探す</p>
-  <p class="supplement">※現在、「関東・千葉」のみ検索可能</p>
+  <p class="top-supplement">※現在、「関東・千葉」のみ検索可能</p>
   <ul class="menu_rural">
     <li>
       <a href="" class="parent_menu">北海道・東北</a>
@@ -47,7 +48,7 @@
           <%= link_to "東京", "#", class:"kanto" %>
         </li>
         <li>
-          <%= link_to "千葉", "#", class:"kanto" %>
+          <%= link_to "千葉", gyms_chibacity_path, class:"kanto" %>
         </li>
         <li>
           <%= link_to "埼玉", "#", class:"kanto" %>
