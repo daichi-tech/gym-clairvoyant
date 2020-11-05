@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GymClairvoyant</title>
+    <title>Let's play badminton</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <%= yield %>
+
+    <footer>
+      <a href="" class="search_facility">施設検索</a>
+      <a href="" class="question">お問い合わせ</a>
+      <% if user_signed_in? && current_user.admin? %>
+        <%= link_to "管理者専用ページ", new_gym_path, class:"admin-page" %>
+      <% end %>
+      <p class="app_name">gym-clairvoyant.2020</p>
+    </footer>
   </body>
+
+  
 </html>

@@ -1,0 +1,48 @@
+.header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(223, 234, 250);
+  height: 80px;
+  width: 100%;
+}
+
+.page-header {
+  background-color: rgb(223, 234, 250);
+}
+.right-bar {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  padding: 10px 0;
+  background-color: rgb(223, 234, 250);
+}
+.name {
+  font-weight: bold;
+}
+
+
+.login,.sign-up,.logout,.name {
+  text-decoration: none;
+  line-height: 32px;
+  margin-right: 3vw;
+  color: #333333;
+  background-color: rgb(146, 193, 255);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.logo {
+  padding-left: 20px;
+  font-size: 20px;
+}
+nav > ul {
+  display: flex;
+}
+nav > ul > li {
+  margin-right: 20px;
+}
+
