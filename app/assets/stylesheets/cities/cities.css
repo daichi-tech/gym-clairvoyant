@@ -1,10 +1,11 @@
 .main-city > p {
   font-size: 30px;
   padding: 10px;
-  margin: 10px;
-  background-color: rgb(253, 219, 65);
+  margin: 90px 10px 10px 10px;
+  background-color: rgb(253, 160, 38);
   width: fit-content;
   border-radius: 30px;
+
 }
 .city_list {
   max-width: 1000px;

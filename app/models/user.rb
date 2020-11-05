@@ -10,4 +10,6 @@ class User < ApplicationRecord
     validates :password_confirmation   
     validates :name, length: { maximum: 40 }
   end
+
+  has_many :gyms
 end

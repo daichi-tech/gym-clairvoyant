@@ -1,0 +1,41 @@
+<div>
+  <%= render "shared/header" %>
+</div>
+
+<div class="add-gym-main">
+  <p>バドミントン施設の情報を編集する</p>
+  <%= form_with model: @gym, url: gyms_path, local: true do |f| %>
+
+  <%= render "shared/error_messages", model: f.object %>
+
+  <div class="img-up">
+    <p>施設画像をアップロード</p>
+    <%= f.file_field :image %>
+  </div>
+  <div class="new-gym">
+    <p>施設名</p>
+    <%= f.text_area :name, class:"gym-detail" %>
+    <p>施設の住所</p>
+    <%= f.text_area :address, class:"gym-detail"%>
+    <p>施設の電話番号</p>
+    <%= f.text_area :phone_number, class:"gym-detail"%>
+    <p>施設の使える曜日</p>
+    <%= f.text_area :playweek, class:"gym-detail"%>
+    <p>施設の使える日時</p>
+    <%= f.text_area :playtime, class:"gym-detail"%>
+    <p>使えるコート数</p>
+    <%= f.text_area :court, class:"gym-detail"%>
+    <p>施設のホームページURL</p>
+    <%= f.text_area :homepage, class:"gym-detail"%>
+    <p>施設のgoogleマップURL</p>
+    <%= f.text_area :map_url, class:"gym-detail"%>
+    <p>補足情報</p>
+    <%= f.text_area :supplement, class:"gym-detail"%>
+  </div>
+
+  <div class="gym-btn-contents">
+    <%= f.submit "登録する", class: "gym-btn" %>
+    <%= link_to 'トップページに戻る', root_path, class: "back-btn" %>
+  </div>
+  <% end %>
+</div>
