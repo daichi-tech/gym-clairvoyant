@@ -1,0 +1,17 @@
+<h3 class="contact_title">お問い合わせ確認</h3>
+
+<%= form_with model: @contact, url: contacts_thanks_path, local: true do |f| %>
+  <div class="form_text">
+    <%= f.label :emailアドレス, class:"confirm_text" %>
+    <%= f.hidden_field :email %>
+    <%= @contact.email %>
+  </div>
+  <div class="form_text">
+    <%= f.label :お問い合わせ内容, class:"confirm_text" %>
+    <%= f.hidden_field :message %>
+    <%= @contact.message %>
+  </div>
+  <div class="form_btn">
+    <%= f.submit '送信', class:"send_btn"%>
+  </div>  
+<% end %>

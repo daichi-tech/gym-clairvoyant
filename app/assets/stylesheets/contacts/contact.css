@@ -1,0 +1,55 @@
+.contact_title {
+  position: relative;
+  background-color: #52c2d0;
+  color: white;
+  padding: 10px 0 10px 20px;
+  font-size: 20px;
+}
+.form_text {
+  padding: 10px 20px;
+}
+
+input.email_text {
+  display: block;
+  width: 500px;
+}
+.message_area {
+  display: block;
+  width: 500px;
+  height: 250px;
+}
+.form_btn {
+  background-color: #52c2d0;
+  padding: 10px;
+  margin-top: 20px;
+}
+.send_btn, .return_top {
+  margin-left: 20px;
+  display       : inline-block;
+  border-radius : 20%;
+  font-size     : 17pt;
+  text-align    : center; 
+  cursor        : pointer;
+  padding       : 10px 20px;
+  background    : #009977;
+  color         : #ffffff;
+  line-height   : 1em;
+  transition    : .3s;
+  border        : 2px solid #009977;
+}
+.send_btn:hover {
+  color: #009977;
+  background: #ffffff;
+  opacity: 0.6;
+}
+.return_top:hover {
+  color: #009977;
+  background: #ffffff;
+}
+
+.confirm_text {
+  display: block;
+}
+.thanks_text {
+  padding: 50px 0 50px 20px;
+}
