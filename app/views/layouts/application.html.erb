@@ -14,7 +14,7 @@
 
     <footer>
       <a href="" class="search_facility">施設検索</a>
-      <a href="" class="question">お問い合わせ</a>
+      <a href="/contacts/new" class="question">お問い合わせ</a>
       <% if user_signed_in? && current_user.admin? %>
         <%= link_to "管理者専用ページ", new_gym_path, class:"admin-page" %>
       <% end %>

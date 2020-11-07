@@ -1,0 +1,17 @@
+<h3 class="contact_title">お問い合わせ</h3>
+
+<%= form_with model: @contact, url: contacts_path, class: "form_contact", local: true do |f| %>
+<%= render "shared/error_messages", model: f.object %>
+  <div class="form_text">
+    <%= f.label :emailアドレス %>
+    <%= f.text_field :email, class:"email_text" %>
+  </div>
+  <div class="form_text">
+    <%= f.label :お問い合わせ内容 %>
+    <%= f.text_area :message, class:"message_area" %>
+  </div>
+  <div class="form_btn">
+    <%= f.submit "確認", class:"send_btn"%>
+    <%= link_to 'もどる', root_path, class:"return_top" %>
+  </div>
+<% end %>

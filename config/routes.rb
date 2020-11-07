@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   get "gyms/chibacity"
 
   resources :gyms
+  post "contacts/thanks"
+  resources :contacts, only: [:new, :create]
 end
