@@ -1,0 +1,53 @@
+.gym-name {
+  margin: 90px 20px 10px 20px;
+  background: linear-gradient(transparent 70%, #a7d6ff 70%);
+  width: auto;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+.gym-image {
+  margin-left: 20px;
+}
+
+.detail-title {
+  display: block;
+  margin: 10px 20px;
+  background: linear-gradient(transparent 70%, #a7d6ff 70%);
+  padding-bottom: 10px;
+}
+.gym-detail > p {
+  margin-left: 30px;
+}
+.gym-supplement  {
+  margin-bottom: 50px;
+}
+.facility-page a {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: limegreen;
+  background: #ECECEC;
+  transition: .4s;
+}
+
+.facility-page a:hover {
+  background: limegreen;
+  color: white;
+}
+.gym-edit, .gym-destroy {
+  text-decoration: none;
+  line-height: 32px;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+.gym-edit {
+  background-color: mediumturquoise;
+  margin-right: 300px;
+}
+.gym-destroy {
+  background-color: red;
+}

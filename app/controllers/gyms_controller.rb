@@ -1,5 +1,6 @@
 class GymsController < ApplicationController
   def index
+    @gym = Gym.all
   end
 
   def new
@@ -9,7 +10,7 @@ class GymsController < ApplicationController
   def create
     @gym = Gym.new(gym_params)
     if @gym.save
-      redirect_to :new
+      redirect_to new_gym_path
     else
       render :new
     end
@@ -28,6 +29,12 @@ class GymsController < ApplicationController
     end
   end
 
+  def destroy
+    @gym = Gym.find(params[:id])
+    @gym.destroy
+    redirect_to root_path
+  end
+
   def show
     @gym = Gym.find(params[:id])
   end
@@ -38,6 +45,6 @@ class GymsController < ApplicationController
   private
 
   def gym_params
-    params.require(:gym).permit(:name, :address, :phone_number, :playweek, :playtime, :court, :map_url, :homepage, :supplement).merge(user_id: current_user.id)
+    params.require(:gym).permit(:image, :name, :address, :phone_number, :playweek, :playtime, :court, :map_url, :homepage, :supplement).merge(user_id: current_user.id)
   end
 end

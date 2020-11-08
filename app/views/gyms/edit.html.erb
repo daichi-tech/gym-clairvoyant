@@ -4,7 +4,7 @@
 
 <div class="add-gym-main">
   <p>バドミントン施設の情報を編集する</p>
-  <%= form_with model: @gym, url: gyms_path, local: true do |f| %>
+  <%= form_with model: @gym, local: true do |f| %>
 
   <%= render "shared/error_messages", model: f.object %>
 
