@@ -17,6 +17,7 @@
 }
 .gym-detail > p {
   margin-left: 30px;
+  white-space: pre-wrap;
 }
 .gym-supplement  {
   margin-bottom: 50px;
