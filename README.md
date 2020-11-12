@@ -23,7 +23,7 @@ pass: tryment11
 ## 利用方法
 　ユーザ登録しなくても利用可能です。
 　トップページに日本の地方が表示されたメニューがあり、地方→都道府県→市・区→施設名と表示され、施設名をクリックするとその施設の情報を閲覧でき、マップと施設の公式ページに遷移するリンクもあります。  
-[![Image from Gyazo](https://i.gyazo.com/bf069b8a1aa9db17869abcf6f6fc0790.gif)](https://gyazo.com/bf069b8a1aa9db17869abcf6f6fc0790)
+[![Image from Gyazo](https://i.gyazo.com/965863a1fa9614b581eae10b2d6baa5a.gif)](https://gyazo.com/965863a1fa9614b581eae10b2d6baa5a)
 
 　ユーザを登録した場合、施設をお気に入り登録できて、マイページに表示されます。お気に入りボタンは各施設の詳細ページにあります。  
 　アプリケーションの疑問や要望があれば問い合わせページから、お問い合わせください。
